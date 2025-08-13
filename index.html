@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>0-4 單字聽打測驗</title>
+<title>0-5 單字聽打測驗</title>
 <style>
 body { font-family: sans-serif; max-width: 600px; margin: auto; text-align: center; padding: 30px 15px; }
 #logo, #logo-game { width: 150px; max-width: 80%; margin-bottom: 10px; display: block; margin-left: auto; margin-right: auto; }
@@ -33,7 +33,7 @@ if (password !== "1231") { alert("密碼錯誤，無法進入！"); window.locat
 
 <div id="game-area" class="hidden">
 <img id="logo-game" src="logo.png" alt="Logo"/>
-<div id="game-title">0-4 單字聽打測驗</div>
+<div id="game-title">0-5 單字聽打測驗</div>
 <div id="question-number"></div>
 <div id="timer" style="font-size:18px; color:red; margin-bottom:15px;"></div>
 <audio id="audio" controls></audio>
@@ -55,18 +55,18 @@ if (password !== "1231") { alert("密碼錯誤，無法進入！"); window.locat
 
 <script>
 const questions = [
-  { audio: "000401W.mp3", answer: "가루", chinese: "粉" },
-  { audio: "000402W.mp3", answer: "고모", chinese: "姑姑" },
-  { audio: "000403W.mp3", answer: "요가", chinese: "瑜珈" },
-  { audio: "000404W.mp3", answer: "고구마", chinese: "地瓜" },
-  { audio: "000405W.mp3", answer: "카드", chinese: "卡片" },
-  { audio: "000406W.mp3", answer: "마이크", chinese: "麥克風" },
-  { audio: "000407W.mp3", answer: "쿠키", chinese: "餅乾" },
-  { audio: "000408W.mp3", answer: "코", chinese: "鼻子" },
-  { audio: "000409W.mp3", answer: "꼬리", chinese: "尾巴" },
-  { audio: "000410W.mp3", answer: "두꺼비", chinese: "癩蛤蟆" },
-  { audio: "000411W.mp3", answer: "코끼리", chinese: "大象" },
-  { audio: "000412W.mp3", answer: "꼬마", chinese: "小不點" }
+  { audio: "000501W.mp3", answer: "두부", chinese: "豆腐" },
+  { audio: "000502W.mp3", answer: "드디어", chinese: "終於" },
+  { audio: "000503W.mp3", answer: "가이드", chinese: "導遊" },
+  { audio: "000504W.mp3", answer: "라디오", chinese: "收音機" },
+  { audio: "000505W.mp3", answer: "타이어", chinese: "輪胎" },
+  { audio: "000506W.mp3", answer: "기타", chinese: "吉他" },
+  { audio: "000507W.mp3", answer: "토마토", chinese: "番茄" },
+  { audio: "000508W.mp3", answer: "마트", chinese: "超市" },
+  { audio: "000509W.mp3", answer: "따로", chinese: "分開" },
+  { audio: "000510W.mp3", answer: "허리띠", chinese: "腰帶" },
+  { audio: "000511W.mp3", answer: "또", chinese: "又" },
+  { audio: "000512W.mp3", answer: "띠", chinese: "生肖" }
 ];
 
 const modeSelectDiv = document.getElementById("mode-select");
